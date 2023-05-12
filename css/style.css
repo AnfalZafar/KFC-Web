@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.amount{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background: crimson; */
+    width: 20%;
+}
+.register{
+width: 130px;
+height: 35px;
+border: none;
+background: crimson;
+border-radius: 15px 10px;
+font-size: 1.1rem;
+color: #fff;
+}
+.modal-button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 5px 10px 10px 10px;
+    background: crimson;
+    color: #fff;
+    cursor: pointer;
+}
+.card{
+    width: 18rem;
+   margin: auto;
+   margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid crimson; */
+    border-radius: 10px 10px;
+    padding: 1rem;
+    color: #fff;
+    background: rgb(31,24,22);
+}
+.name{
+    font-weight: bold;
+}
+.card-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.data{
+    cursor: pointer;
+    width: 130px;
+    height: 35px;
+    background: crimson;
+    border: none;
+    border-radius: 10px 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.p{
+    margin-top: 1rem;
+    color:antiquewhite;
+    margin-bottom: 1rem;
+}
+.h5button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.img-1{
+    width: 15rem;
+    margin-bottom: 1rem;
+}
+.price{
+    font-size: 1.5rem;
+}
+#card{
+    display: grid;
+   grid-template-columns: repeat(auto-fit , minmax(280px , 1fr));
+   grid-gap: 2;
+   /* grid-template-rows: repeat(auto-fit , minmax(1fr , 1fr)); */
+   overflow: hidden;
+   justify-content: center;
+   align-items: center;
+}
+.container{
+    margin-top: 5rem;
+}
+@media(max-width:750px){
+    .amount{
+        width: 40%;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
+@media(max-width:350px){
+    .register{
+        font-size: 1rem;
+    }
+}
+/* modal */
+.modal{
+    width: 30%;
+    height: 650px;
+    background: rgb(31,24,22);
+    position: absolute;
+    top: 0;
+    right: -40rem;
+    opacity: 1;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.table-img{
+    width: 4rem;
+}
+#table{
+    width: 100%;
+    background: rgb(31,24,22);
+    color: #fff;
+    margin-top: 1rem;
+    
+}
+tr td{
+    margin-top: 1rem;
+
+}
+#close{
+    width: 35px;
+    height: 30px;
+    border: none;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    background: none;
+}
+i{
+    font-size: 1.5rem;
+    color: #fff;
+}
+@media(max-width:750px){
+    #modal{
+        width: 60%;
+    }
+}
